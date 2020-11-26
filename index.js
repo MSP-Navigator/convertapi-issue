@@ -5,7 +5,11 @@ const fs = require('fs');
 const convertapi = require('convertapi')('REPLACE_ME');
 
 (async () => {
+  // doesn't work
   const input = './202220.LiveBy Overview (Full).pdf';
+
+  // works
+  // const input = './080439.MSPNTOSUsers1_1.pdf';
 
   const readStream = fs.createReadStream(input);
 
